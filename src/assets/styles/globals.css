@@ -8,6 +8,7 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     @apply md:text-lg;
+    @apply text-accent-content;
 }
 
 h1, h2, h3, h4, h5, h6 {
