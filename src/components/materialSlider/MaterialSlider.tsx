@@ -15,6 +15,7 @@ export const MaterialSlider = () => {
 				grabCursor={true}
 				slidesPerView={2}
 				loop={true}
+				mousewheel={true}
 			>
 				<SwiperSlide>
 					<div className={cn(styles.wrapper, 'swiper-material-wrapper')}>
