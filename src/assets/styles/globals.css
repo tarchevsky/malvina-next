@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /*font-family: 'Jost', sans-serif;*/
+    font-family: 'Raleway Variable';
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply mt-[20px];
+    @apply mb-[20px];
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    @apply mt-[20px];
+    @apply mb-[20px];
+}
+
+[data-type="post"] {
+    text-decoration: underline;
+}
+
+/* Стили для элементов WP */
+
+.header-menu__list {
+    display: flex;
+}
+
+/* Дефолтный стиль подчеркивания метки */
+
+.tag-item {
+    padding: 2px 5px;
+    margin: 0 5px;
+    border-bottom: 3px solid; /* По умолчанию цвет не задан */
+    text-decoration: none; /* Отключаем стандартное подчеркивание ссылок */
+}
+
+.card-body {
+    p {
+        margin: 0;
+    }
+}
+
+.cont-white a {
+    color: #fff;
+}
