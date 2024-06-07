@@ -6,8 +6,8 @@ body {
     /*font-family: 'Jost', sans-serif;*/
     font-family: 'Raleway Variable';
     font-weight: 300;
-    font-size: 20px;
     letter-spacing: 2px;
+    @apply md:text-lg;
 }
 
 h1, h2, h3, h4, h5, h6 {
