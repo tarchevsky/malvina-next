@@ -31,8 +31,8 @@ const Carousel = () => {
 							alt='more-dark'
 							className='absolute top-0 left-0 h-full w-full rounded-box -z-10 brightness-50'
 						/>
-						<div className='font-thin text-5xl'>Title 1</div>
-						<div>Текст на слайде</div>
+						<div className='font-thin text-5xl text-white'>Title 1</div>
+						<div className='text-white'>Текст на слайде</div>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -42,8 +42,8 @@ const Carousel = () => {
 							alt='forest-river'
 							className='absolute top-0 left-0 h-full w-full rounded-box -z-10 brightness-50'
 						/>
-						<div className='font-thin text-5xl'>Title 2</div>
-						<div>Текст на слайде</div>
+						<div className='font-thin text-5xl text-white'>Title 2</div>
+						<div className='text-white'>Текст на слайде</div>
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -53,8 +53,8 @@ const Carousel = () => {
 							alt='fog-sea'
 							className='absolute top-0 left-0 h-full w-full rounded-box -z-10 brightness-50'
 						/>
-						<div className='font-thin text-5xl'>Title 3</div>
-						<div>Текст на слайде</div>
+						<div className='font-thin text-5xl text-white'>Title 3</div>
+						<div className='text-white'>Текст на слайде</div>
 					</div>
 				</SwiperSlide>
 			</Swiper>
