@@ -16,7 +16,7 @@ const FadeIn = ({ children, className }: LayoutProps) => {
 			},
 			{
 				// Настройки observer'a. Можно изменить, чтобы анимация начиналась, например, когда элемент только начинает появляться.
-				threshold: 0.5 // 50% элемента должно быть видно, чтобы анимация сработала.
+				threshold: 0.2 // 50% элемента должно быть видно, чтобы анимация сработала.
 			}
 		)
 		if (ref.current) {
@@ -35,7 +35,7 @@ const FadeIn = ({ children, className }: LayoutProps) => {
 			ref={ref}
 			animate={controls}
 			initial='hidden'
-			transition={{ duration: 2 }} // Настройка продолжительности анимации
+			transition={{ duration: 1 }} // Настройка продолжительности анимации
 			variants={{
 				visible: { opacity: 1, y: 0 },
 				hidden: { opacity: 0, y: 20 } // Начальное положение элемента перед анимацией
