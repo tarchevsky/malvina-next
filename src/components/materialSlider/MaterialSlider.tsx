@@ -1,4 +1,4 @@
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Mousewheel, Navigation, Pagination } from 'swiper/modules'
 import EffectMaterial from './effect-material.esm.js'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import FadeIn from '@/components/fadeIn/FadeIn'
@@ -9,7 +9,7 @@ export const MaterialSlider = () => {
 	return (
 		<FadeIn className='cont mb-60'>
 			<Swiper
-				modules={[Autoplay, Navigation, Pagination, EffectMaterial]}
+				modules={[Autoplay, Navigation, Pagination, EffectMaterial, Mousewheel]}
 				effect={'material'}
 				spaceBetween='16'
 				grabCursor={true}
@@ -22,7 +22,7 @@ export const MaterialSlider = () => {
 							<img
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
-								src='/01.jpg'
+								src='/fog-sea.jpg'
 							/>
 
 							<span
@@ -42,7 +42,7 @@ export const MaterialSlider = () => {
 							<img
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
-								src='/02.jpg'
+								src='/forest-river.jpg'
 							/>
 
 							<span
@@ -62,7 +62,7 @@ export const MaterialSlider = () => {
 							<img
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
-								src='/03.jpg'
+								src='/more-dark.jpg'
 							/>
 
 							<span
@@ -82,7 +82,7 @@ export const MaterialSlider = () => {
 							<img
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
-								src='/04.jpg'
+								src='/note.jpg'
 							/>
 
 							<span
