@@ -1,8 +1,26 @@
+import { useEffect, useState } from 'react'
 import { ThemeToggleProps } from '@/types'
 
 const ThemeToggle = ({ className }: ThemeToggleProps) => {
+	const [isDarkMode, setIsDarkMode] = useState(false)
+
+	useEffect(() => {
+		const savedTheme = localStorage.getItem('theme')
+		if (savedTheme) {
+			document.documentElement.setAttribute('data-theme', savedTheme)
+			setIsDarkMode(savedTheme === 'dark')
+		}
+	}, [])
+
+	const toggleTheme = () => {
+		const newTheme = isDarkMode ? 'light' : 'dark'
+		localStorage.setItem('theme', newTheme)
+		document.documentElement.setAttribute('data-theme', newTheme)
+		setIsDarkMode(!isDarkMode)
+	}
+
 	return (
-		<label className='flex items-center cursor-pointer gap-2 h-12 md:h-auto'>
+		<label className='flex items-center justify-between cursor-pointer gap-2 h-12 w-auto md:h-auto'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='20'
@@ -19,7 +37,9 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
 			<input
 				type='checkbox'
 				value='cupcake'
-				className='toggle theme-controller'
+				className='toggle theme-controller rounded-xl'
+				checked={isDarkMode}
+				onChange={toggleTheme}
 			/>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
