@@ -4,6 +4,7 @@ import { PageProps } from '@/types'
 import { getApolloClient } from '@/lib/apollo-client'
 import { gql } from '@apollo/client'
 import Meta from '@/components/meta/Meta'
+import ContactForm from '@/components/contactForm/ContactForm'
 
 const ContactsPage: NextPage<PageProps> = ({ page }: PageProps) => {
 	const { seo, contacts } = page
@@ -13,19 +14,24 @@ const ContactsPage: NextPage<PageProps> = ({ page }: PageProps) => {
 			<Meta seo={seo} />
 			<FadeIn className='cont'>
 				<main>
-					<h1 className={`text-4xl font-bold`}>{page.title}</h1>
-					<p
-						className={`text-lg`}
-						dangerouslySetInnerHTML={{
-							__html: contacts.adress
-						}}
-					/>
-					<p
-						className={`text-lg`}
-						dangerouslySetInnerHTML={{
-							__html: contacts.tel
-						}}
-					/>
+					<h1 className={`text-4xl my-14 xl:my-32`}>{page.title}</h1>
+					<div className='flex flex-col flex-col-reverse gap-14 xl:flex-row xl:gap-32'>
+						<ContactForm />
+						<div className={`flex flex-col justify-center`}>
+							<p
+								className={`text-lg`}
+								dangerouslySetInnerHTML={{
+									__html: contacts.adress
+								}}
+							/>
+							<p
+								className={`text-lg`}
+								dangerouslySetInnerHTML={{
+									__html: contacts.tel
+								}}
+							/>
+						</div>
+					</div>
 				</main>
 			</FadeIn>
 		</>
