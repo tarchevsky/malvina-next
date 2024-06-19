@@ -20,7 +20,7 @@ import CIcon from '@coreui/icons-react'
 import { cibVk, cibWhatsapp, cilPhone } from '@coreui/icons'
 
 const HomePage: NextPage<PageProps> = ({ page, posts }: PageProps) => {
-	const { seo, heroText, heroBtn, link, altText } = page
+	const { seo, heroText, heroBtn, link, altText, hitext } = page
 
 	return (
 		<>
@@ -70,21 +70,7 @@ const HomePage: NextPage<PageProps> = ({ page, posts }: PageProps) => {
 								</div>
 							</div>
 						</div>
-						<p className='flex-auto'>
-							Ко мне обращаются за помощью люди, которые не готовы долго и
-							мучительно ковыряться в своем прошлом в поисках инсайтов, с
-							которыми непонятно что потом делать. Практически каждый запрос
-							звучит так: «Я так жить больше не могу! А как по-другому не знаю,
-							не умею!» Благодаря совместным усилиям мои клиенты находят в себе
-							силы и мотивацию развивать свой личный бренд на фрилансе, а кто-то
-							напротив умудряется совмещать работу в найме и мягко
-							реализовываться в творчестве, есть те, кто проделал большую
-							работу, чтобы выбраться из депрессии и начать жить ту жизнь,
-							которая подходит именно ему. Я практикую в рамках
-							когнитивно-поведенческого подхода, в данный момент повышаю
-							квалификацию и изучаю РЭПТ, с помощью которого результаты терапии
-							заметны уже с первых встреч.
-						</p>
+						<p className='flex-auto'>{hitext}</p>
 					</div>
 				</FadeIn>
 
@@ -126,7 +112,14 @@ const HomePage: NextPage<PageProps> = ({ page, posts }: PageProps) => {
 				<Spheres />
 				<Carousel />
 				<Price />
+				<FadeIn className='cont mb-6'>
+					<h3>Подумайте об этом</h3>
+				</FadeIn>
 				<CarouselBeyond />
+
+				<FadeIn className='cont mb-6'>
+					<h4>Советую прочитать</h4>
+				</FadeIn>
 				<MaterialSlider />
 
 				<ul>
@@ -207,6 +200,7 @@ export async function getStaticProps() {
 						}
 						heroText
 						heroBtn
+						hitext
 					}
 				}
 			}
