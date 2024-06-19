@@ -37,6 +37,8 @@ const ThemeToggle = ({ className }: ThemeToggleProps) => {
 			<input
 				type='checkbox'
 				value='cupcake'
+				name='themeToggle'
+				aria-label='Переключатель темы'
 				className='toggle theme-controller rounded-xl'
 				checked={isDarkMode}
 				onChange={toggleTheme}

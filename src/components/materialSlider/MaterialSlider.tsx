@@ -24,6 +24,7 @@ export const MaterialSlider = () => {
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
 								src='/fog-sea.jpg'
+								alt='Море в тумане'
 							/>
 
 							<span
@@ -44,6 +45,7 @@ export const MaterialSlider = () => {
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
 								src='/forest-river.jpg'
+								alt='Лес и река'
 							/>
 
 							<span
@@ -64,6 +66,7 @@ export const MaterialSlider = () => {
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
 								src='/more-dark.jpg'
+								alt='Картинка'
 							/>
 
 							<span
@@ -84,6 +87,7 @@ export const MaterialSlider = () => {
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
 								src='/note.jpg'
+								alt='Картинка человека, который пишет в блокноте'
 							/>
 
 							<span
@@ -104,6 +108,7 @@ export const MaterialSlider = () => {
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
 								src='/05.jpg'
+								alt='Картинка 2'
 							/>
 
 							<span
@@ -124,6 +129,7 @@ export const MaterialSlider = () => {
 								className={cn(styles.image, 'material-image')}
 								data-swiper-material-scale='1.25'
 								src='/06.jpg'
+								alt='Картинка 3'
 							/>
 
 							<span

@@ -55,13 +55,13 @@ const HomePage: NextPage<PageProps> = ({ page, posts }: PageProps) => {
 									дипломированный психолог-консультант МГУ, 2014 г.
 								</div>
 								<div className='grid grid-flow-col gap-4 mt-4 justify-start'>
-									<Link href='/'>
+									<Link href='/' aria-label='Ссылка на VK'>
 										<CIcon icon={cibVk} className='fill-blue-400 w-7 h-7' />
 									</Link>
-									<Link href='/'>
+									<Link href='/' aria-label='Ссылка на телефон психолога'>
 										<CIcon icon={cilPhone} className='fill-black-500 w-7 h-7' />
 									</Link>
-									<Link href='/'>
+									<Link href='/' aria-label='Ссылка на whatsapp психолога'>
 										<CIcon
 											icon={cibWhatsapp}
 											className='fill-green-600 w-7 h-7'
