@@ -32,6 +32,16 @@ export interface PageProps {
 	page: any
 	node: any
 	pageId: string
+	postsData: PostProps[]
+}
+
+// blog.tsx
+
+export interface PageProps {
+	posts: PostProps[]
+	page: any
+	node: any
+	pageId: string
 }
 
 // [postSlug].tsx
