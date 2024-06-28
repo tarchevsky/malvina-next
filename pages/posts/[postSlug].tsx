@@ -6,6 +6,7 @@ import { getApolloClient } from '@/lib/apollo-client'
 import { Params, PostEdge, PostPageProps } from '@/types'
 import Meta from '@/components/meta/Meta'
 import FadeIn from '@/components/fadeIn/FadeIn'
+import { ReadLine } from '@/components/readLine/ReadLine'
 
 export default function Post({ post, site }: PostPageProps) {
 	const { seo, featuredImage } = post
@@ -13,6 +14,7 @@ export default function Post({ post, site }: PostPageProps) {
 	return (
 		<div>
 			<Meta seo={seo} />
+			<ReadLine />
 			<FadeIn className='relative'>
 				<main>
 					{featuredImage ? (
