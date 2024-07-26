@@ -1,5 +1,11 @@
 import { ReactNode } from 'react'
 
+// Metrika.tsx
+
+export interface MetrikaProps {
+	yId: number
+}
+
 // Meta.tsx
 
 export interface MetaProps {
